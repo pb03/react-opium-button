@@ -1,0 +1,46 @@
+{
+  "name": "react-opium-button",
+  "version": "0.4.4",
+  "description": "Button component with animating UI according to state.",
+  "main": "dist/browser.js",
+  "module": "dist/es.js",
+  "browser": "dist/browser.js",
+  "files": [
+    "dist",
+    "style.css",
+    "README.md",
+    "demo.gif"
+  ],
+  "peerDependencies": {
+    "react": "^16.2.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "author": {
+    "name": "Prasanjit Singh",
+    "email": "prasanjit.singh@live.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pb03/react-opium-button"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-uglify": "^3.0.0"
+  },
+  "keywords": [
+    "button",
+    "loading",
+    "react",
+    "animation",
+    "simple"
+  ]
+}

@@ -1,0 +1,159 @@
+.opm-btn,
+.opm-btn * {
+  box-sizing: border-box;
+}
+
+.opm-btn {
+  --width: auto;
+  --height: auto;
+  --padding: 5px;
+  --background: none;
+  --backgroundHover: none;
+  --colorHover: inherit;
+  --border: 0;
+  --radius: 0;
+
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  background: var(--background);
+  border: var(--border);
+  border-radius: var(--radius);
+  color: var(--color);
+  padding: var(--padding);
+
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.15s;
+}
+
+.opm-btn:hover,
+.opm-btn:focus {
+  background: var(--backgroundHover);
+  color: var(--colorHover);
+}
+
+.opm-btn.is-loading,
+.opm-btn.is-success {
+  pointer-events: none;
+}
+
+.opm-btn:disabled {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.opm-text {
+  opacity: 0;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.opm-loader,
+.opm-success {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(0.6);
+  opacity: 0;
+  transition: 0.05s;
+}
+
+.is-loading .opm-loader,
+.is-success .opm-success {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: 0.3s;
+}
+
+.opm-loading-text {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+
+.opm-loading-text__blinker {
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.is-normal .opm-text,
+.is-loading .opm-loading-text {
+  opacity: 1;
+}
+
+.opm-checkmark {
+  fill: none;
+  stroke-width: 20px;
+  stroke-dashoffset: 187;
+  stroke-dasharray: 187;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.is-success .opm-checkmark {
+  animation: tick 0.3s ease forwards;
+}
+
+@keyframes tick {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.opm-fill {
+  fill: var(--color);
+  transition: fill 0.15s;
+}
+
+.opm-btn:hover .opm-fill,
+.opm-btn:focus .opm-fill {
+  fill: var(--colorHover);
+}
+
+.opm-stroke {
+  stroke: var(--color);
+  transition: stroke 0.15s;
+}
+
+.opm-btn:hover .opm-checkmark,
+.opm-btn:focus .opm-checkmark,
+.opm-btn:hover .opm-stroke,
+.opm-btn:focus .opm-stroke {
+  stroke: var(--colorHover);
+}
+
+.opm-dot {
+  opacity: 0;
+  stroke: none;
+  animation: pulse 1.2s infinite;
+}
+
+.opm-dot:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.opm-dot:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+@keyframes pulse {
+  0%, 48% {
+    opacity: 0.15;
+  }
+  24% {
+    opacity: 0.85;
+  }
+}
