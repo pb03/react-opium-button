@@ -1,9 +1,12 @@
 # react-opium-button
-
 A light-weight react button with inline state indicator.
+
+<img src="https://github.com/pb03/react-opium-button/raw/master/demo.gif" width="680" alt="Demo">
 
 ## Installation
 `npm i react-opium-button`
+
+[Codepen demo](https://codepen.io/prasanjit/pen/dmraqZ)
 
 ## Usage
 
@@ -20,7 +23,7 @@ class App extends Component {
   }
 
   handleClick() {
-    console.log('button clicked);
+    console.log('button clicked');
   }
 
   render() {
@@ -64,8 +67,8 @@ export default myModifiedButton;
 | Prop | Type | Default | Description |
 |---|---|---|---|
 | `text` (required) | String | Click me! | Button text |
-| `background` | String | `#e8eaeb` | Background color of the button. Can be solid or gradient color with hex values. You can optionally specify hover color after a `\|` separator, e.g. `#ff0000\|#000000` |
-| `color` | String | `#2e2e2e` | Text color, should be a hex value, optionally specify hover color as `#ff0000\|#000000` |
+| `background` | String | `#e8eaeb` | Background color of the button. Can be solid or gradient color with hex values. You can optionally specify hover color after a '&#124;' separator, e.g. '#ff0000&#124;#000000' |
+| `color` | String | `#2e2e2e` | Text color, should be a hex value, optionally specify hover color as '#ff0000&#124;#000000' |
 | `dimensions` | String | `auto auto` | Width and height of the button, e.g. `150px 30px` |
 | `padding` | String | `5px` | CSS padding e.g. `10px 50px` |
 | `border` | String | `none` | CSS border e.g. `2px solid #e2e3e5` |

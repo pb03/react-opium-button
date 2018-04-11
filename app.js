@@ -151,7 +151,7 @@ class OpiumButton extends React.Component {
               <span className="opm-loading-text__blinker">{loadingText}</span>
             </span>
           : <span className="opm-loader">
-              <svg height="100%" overflow="visible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+              <svg height="100%" width="100%" overflow="visible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
                 {this.getLoader()}
               </svg>
             </span>}
