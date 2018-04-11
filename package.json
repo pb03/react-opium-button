@@ -1,6 +1,6 @@
 {
   "name": "react-opium-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A light-weight react button with inline state indicator.",
   "main": "dist/browser.js",
   "module": "dist/es.js",
