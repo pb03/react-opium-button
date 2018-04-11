@@ -78,7 +78,7 @@ class OpiumButton extends React.Component {
 
     switch (loaderType) {
       case 'dots':
-      return <g transform="scale(1.5)" transform-origin="center">
+      return <g className="opm-dots">
         <circle className="opm-fill opm-dot" cx="7" cy="50" r="7"/>
         <circle className="opm-fill opm-dot" cx="50" cy="50" r="7"/>
         <circle className="opm-fill opm-dot" cx="93" cy="50" r="7"/>

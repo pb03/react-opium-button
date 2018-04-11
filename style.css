@@ -135,6 +135,11 @@
   stroke: var(--colorHover);
 }
 
+.opm-dots {
+  transform: scale(1.5) translateY(2%);
+  transform-origin: center;
+}
+
 .opm-dot {
   opacity: 0;
   stroke: none;
