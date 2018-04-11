@@ -134,7 +134,7 @@ var OpiumButton = function (_React$Component) {
         case 'dots':
           return React.createElement(
             'g',
-            { transform: 'scale(1.5)', 'transform-origin': 'center' },
+            { className: 'opm-dots' },
             React.createElement('circle', { className: 'opm-fill opm-dot', cx: '7', cy: '50', r: '7' }),
             React.createElement('circle', { className: 'opm-fill opm-dot', cx: '50', cy: '50', r: '7' }),
             React.createElement('circle', { className: 'opm-fill opm-dot', cx: '93', cy: '50', r: '7' })
@@ -257,7 +257,7 @@ var OpiumButton = function (_React$Component) {
           { className: 'opm-loader' },
           React.createElement(
             'svg',
-            { height: '100%', overflow: 'visible', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100', preserveAspectRatio: 'xMidYMid' },
+            { height: '100%', width: '100%', overflow: 'visible', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100', preserveAspectRatio: 'xMidYMid' },
             this.getLoader()
           )
         ),
