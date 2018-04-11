@@ -164,6 +164,7 @@ class OpiumButton extends React.Component {
 }
 
 OpiumButton.defaultProps = {
+  text: 'Click me!',
   background: '#e8eaeb',
   color: '#2e2e2e',
   dimensions: 'auto auto',
