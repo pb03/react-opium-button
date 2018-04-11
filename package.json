@@ -1,7 +1,7 @@
 {
   "name": "react-opium-button",
-  "version": "0.4.4",
-  "description": "Button component with animating UI according to state.",
+  "version": "0.0.1",
+  "description": "A light-weight react button with inline state indicator.",
   "main": "dist/browser.js",
   "module": "dist/es.js",
   "browser": "dist/browser.js",
@@ -41,6 +41,6 @@
     "loading",
     "react",
     "animation",
-    "simple"
+    "progress"
   ]
 }
