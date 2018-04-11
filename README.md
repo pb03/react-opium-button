@@ -3,6 +3,13 @@ A light-weight react button with inline state indicator.
 
 <img src="https://github.com/pb03/react-opium-button/raw/master/demo.gif" width="680" alt="Demo">
 
+## Features
+* Automatically generates a darker hover color from given solid or gradient color
+* Hover color can also be provided manually
+* Loading indicators with SVG animations
+* Optional different text while loading
+* Completed indicator
+
 ## Installation
 `npm i react-opium-button`
 
